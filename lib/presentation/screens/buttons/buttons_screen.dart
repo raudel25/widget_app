@@ -7,7 +7,7 @@ class ButtonsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Botones')),
+      appBar: AppBar(title: const Text('Buttons')),
       body: const _ButtonsView(),
       floatingActionButton: FloatingActionButton(
         onPressed: () => context.pop(),
