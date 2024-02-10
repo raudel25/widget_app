@@ -39,7 +39,17 @@ class _SideMenuDrawerState extends State<SideMenuDrawer> {
             padding: EdgeInsets.fromLTRB(28, 20, 16, 10),
             child: Text("Other options"),
           ),
-          ...appMenuItems.sublist(3).map((e) => NavigationDrawerDestination(
+          ...appMenuItems.sublist(3, 8).map((e) => NavigationDrawerDestination(
+              icon: Icon(e.icon), label: Text(e.title))),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 16, 28, 10),
+            child: Divider(),
+          ),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 20, 16, 10),
+            child: Text("Configuration"),
+          ),
+          ...appMenuItems.sublist(8).map((e) => NavigationDrawerDestination(
               icon: Icon(e.icon), label: Text(e.title))),
         ]);
   }

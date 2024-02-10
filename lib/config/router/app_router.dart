@@ -6,6 +6,7 @@ import 'package:widget_app/presentation/screens/home/home_screen.dart';
 import 'package:widget_app/presentation/screens/infiniteScroll/inifiniteScrollScreen.dart';
 import 'package:widget_app/presentation/screens/progress_indicators/progress_indicators_screen.dart';
 import 'package:widget_app/presentation/screens/snackbars/snackbars_screen.dart';
+import 'package:widget_app/presentation/screens/theme_changer/theme_changer_screen.dart';
 import 'package:widget_app/presentation/screens/tutorial/tutorial_screen.dart';
 import 'package:widget_app/presentation/screens/ui_controls/ui_controls_screens.dart';
 
@@ -45,6 +46,9 @@ final appRouter = GoRouter(
     ),
     GoRoute(
         path: '/infiniteScroll',
-        builder: (context, state) => const InfiniteScrollScreen())
+        builder: (context, state) => const InfiniteScrollScreen()),
+    GoRoute(
+        path: '/themeChanger',
+        builder: (context, state) => const ThemeChangerScreen())
   ],
 );

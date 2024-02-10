@@ -53,5 +53,10 @@ const appMenuItems = <MenuItem>[
       title: 'Infinite scroll',
       subTitle: 'Infinite scroll and pull refresh',
       route: '/infiniteScroll',
-      icon: Icons.list_alt_rounded)
+      icon: Icons.list_alt_rounded),
+  MenuItem(
+      title: 'Theme changer',
+      subTitle: 'Change app theme',
+      route: '/themeChanger',
+      icon: Icons.color_lens_rounded)
 ];
